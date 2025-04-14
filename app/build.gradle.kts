@@ -36,7 +36,6 @@ android {
         jvmTarget = "11"
     }
     buildFeatures {
-        compose = true
         viewBinding = true
     }
 }
@@ -46,6 +45,8 @@ dependencies {
     // Room
     implementation (libs.androidx.room.runtime)
     kapt(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.ktx)
+
 
     // ViewModel e LiveData
     implementation (libs.androidx.lifecycle.viewmodel.ktx)
@@ -73,4 +74,11 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+}
+
+kapt {
+    arguments {
+        arg("room.schemaLocation", "$projectDir/schemas")
+        arg("room.incremental", "true")
+    }
 }
