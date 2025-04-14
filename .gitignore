@@ -1,15 +1,22 @@
+# Arquivos e pastas da IDE
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+.idea/
+.idea/gradle.xml
+.idea/vcs.xml
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+
+# Arquivos de configuração local
 local.properties
+/local.properties
+
+# Pastas de build e geração automática
+.gradle/
+build/
+app/build/
+.externalNativeBuild/
+.cxx/
+
+# Capturas de tela, logs, e arquivos temporários
+captures/
+*.log
+/app/schemas/com.aulakotlin.appnotas.data.db.AppDatabase/1.json
