@@ -18,4 +18,10 @@ class FolderViewModel(application: Application) : AndroidViewModel(application) 
             db.folderDao().insert(folder)
         }
     }
+
+    fun delete(folder: Folder) = viewModelScope.launch {
+        db.folderDao().delete(folder)
+    }
+
+
 }

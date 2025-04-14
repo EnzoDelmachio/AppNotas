@@ -21,4 +21,8 @@ class NoteViewModel(application: Application) : AndroidViewModel(application) {
         db.noteDao().update(note)
     }
 
+    fun delete(note: Note) = viewModelScope.launch {
+        db.noteDao().delete(note)
+    }
+
 }
