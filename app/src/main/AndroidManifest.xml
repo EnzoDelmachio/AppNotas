@@ -23,6 +23,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.FolderListActivity" />
+        <activity android:name=".ui.NoteListActivity" />
+        <activity android:name=".ui.EditNoteActivity" />
     </application>
 
 </manifest>
