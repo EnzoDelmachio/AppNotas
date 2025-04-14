@@ -2,6 +2,7 @@ package com.aulakotlin.appnotas.data.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
+import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import com.aulakotlin.appnotas.data.model.Folder
@@ -14,5 +15,8 @@ interface FolderDao {
 
     @Insert
     suspend fun insert(folder: Folder)
+
+    @Delete
+    suspend fun delete(folder: Folder)
 
 }
