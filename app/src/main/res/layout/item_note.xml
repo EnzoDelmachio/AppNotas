@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="16dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="?android:attr/selectableItemBackground">
+    android:background="@color/pablo"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp"
+    android:padding="16dp">
 
     <TextView
         android:id="@+id/tvNoteTitle"
-        android:text="Título da Nota"
-        android:textSize="18sp"
-        android:textStyle="bold"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Título da Nota"
+        android:textColor="@color/nebula"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tvNoteContent"
-        android:text="Conteúdo da nota"
-        android:textSize="14sp"
-        android:maxLines="2"
-        android:ellipsize="end"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Conteúdo da nota"
+        android:textColor="@color/nebula"
+        android:textSize="14sp" />
 </LinearLayout>
